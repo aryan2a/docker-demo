@@ -5,5 +5,5 @@ client = TestClient(app)
 
 def test_home_returns_message():
     response = client.get("/")
-    assert response.status_code == 400
+    assert response.status_code == 200
     assert "message" in response.json()
